@@ -1,0 +1,207 @@
+/* 组件样式 */
+
+/* 选项卡容器 */
+.tabs-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 选项卡 */
+.tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 选项卡按钮 */
+.tab-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 12px 20px;
+  background: transparent;
+  color: #666666;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #333333;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #333333 0%, #666666 100%);
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 选项卡内容 */
+.tab-content {
+  margin-bottom: 24px;
+}
+
+/* .tab-pane styles are controlled by Vue's v-show directive */
+
+/* 控制面板区域 */
+.control-section {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.control-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.control-section.compact {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+/* 控制行 */
+.control-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+/* 控制项 */
+.control-item {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.control-item.inline {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 0;
+}
+
+.control-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+/* 带单位的输入框 */
+.input-with-unit {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.unit {
+  position: absolute;
+  right: 12px;
+  color: #666666;
+  pointer-events: none;
+}
+
+/* 自定义字体列表 */
+.custom-font-list {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.custom-font-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.custom-font-list li:last-child {
+  margin-bottom: 0;
+}
+
+.remove-font-btn {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff3b30;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.remove-font-btn:hover {
+  background: #ff3b30;
+  color: white;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #333333 0%, #666666 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 下载按钮 */
+.download-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #333333 0%, #666666 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
